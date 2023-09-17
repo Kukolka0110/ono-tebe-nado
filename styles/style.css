@@ -1,9 +1,12 @@
 /* место для вашего кода */
 
 .header {
-  padding-top: 90px;
+  padding-top: 92px;
   padding-left: 51px;
   padding-right: 51px;
+  display: grid;
+  grid-template-columns: 593px 3fr 1fr;
+
 }
 
 .header__menu {
@@ -13,8 +16,6 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  display: grid;
-  grid-template-columns: 598px 501px 240px;
 }
 
 .header__links-list {
@@ -52,7 +53,8 @@
 
 .header__logo {
   display: flex;
-  padding-top: 4px;
+  justify-self: flex-start;
+  align-items: center;
   height: 105px;
   width: 148px;
 }
@@ -69,11 +71,11 @@
   font-size: 18px;
   font-style: normal;
   line-height: 24.3px; /* 135% */
-  max-width: 260px;
-  justify-content: flex-end;
-  align-self: flex-end;
+  width: 240px;
   flex-shrink: 0;
   text-underline-position: under;
+  justify-self: start;
+  align-self: center;
 }
 
 .cover {
@@ -85,8 +87,8 @@
   background-size: cover;
   background-position: center;
   flex-shrink: 0;
-  margin-top: 99px;
-  padding-top: 165px;
+  margin-top: 97px;
+  padding-top: 164px;
   display: flex;
   flex-direction: column;
 }
@@ -117,16 +119,16 @@
   display: flex;
   flex-direction: column;
   z-index: 2;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 49px;
+  padding-right: 49px;
 }
 
 .aligned-text {
-  padding-bottom: 13px;
+  padding-bottom: 10px;
   letter-spacing: 30px;
 }
-.aligned-text:first-child {
-  margin-top: 0;
+.aligned-text:last-child {
+  padding-bottom: 0;
 }
 
 .letter-spacing-extended {
@@ -154,7 +156,7 @@
   justify-content: flex-end;
   align-items: center;
   z-index: 2;
-  margin-top: 105px;
+  margin-top: 125px;
   position: relative;
 }
 
@@ -193,14 +195,12 @@
 }
 
 .lots {
-  width: 1340px;
-  flex-shrink: 0;
+  max-width: 1340px;
   margin-top: 180px;
   margin-left: 50px;
-  margin-right: 50px;
   display: flex;
   flex-direction: column;
-  position: relative;
+  
 }
 
 .lots__heading {
@@ -215,20 +215,20 @@
 }
 
 .lots__card-list {
-  padding: 0;
   display: flex;
-  flex-direction: row;
-  align-items: center;
   flex-wrap: wrap;
   gap: 25px;
+  padding: 0;
 }
 
 .lots__card-list-item {
+  padding: 0;
   color: #fff;
   list-style-type: none;
-  position: relative;
-  width: 430px;
   flex-grow: 1;
+  width: 430px;
+  min-height: 450px;
+  display: block;
 }
 
 .card {
@@ -236,8 +236,7 @@
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  width: 100%;
-  min-height: 450px;
+  height: 100%;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -266,25 +265,25 @@
   font-style: normal;
   font-weight: 700;
   line-height: 120%;
-  margin: 0;
-  padding-right: 40px;
-  padding-left: 40px;
-  padding-top: 50px;
   text-decoration: underline;
   text-transform: uppercase;
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
   z-index: 2;
+  margin: 0;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-top: 50px;
 }
 
 .card__text {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 120%;
   padding-top: 30px;
   padding-left: 40px;
   padding-right: 40px;
   padding-bottom: 50px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
   z-index: 2;
   display: flex;
 }
@@ -309,6 +308,7 @@
 .about {
   min-width: 1340px;
   flex-shrink: 0;
+  display: flex;
 }
 
 .about__column {
@@ -342,8 +342,7 @@
 .about__texts {
   display: flex;
   flex-direction: column;
-  align-self: center;
-  padding-left: 25px;
+  margin-top: 97px;
 }
 
 .about__text {
@@ -355,12 +354,12 @@
   line-height: normal;
   max-width: 885px;
   flex-shrink: 0;
-  margin-top: 100px;
+  padding-bottom: 24px;
+  
 }
 
 .about__text:last-child {
-  padding-top: 23px;
-  margin: 0;
+  padding-top: 0;
 }
 
 .about__title {
@@ -371,11 +370,9 @@
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
-  padding-top: 100px;
+  padding-bottom: 100px;
 }
-.about__title:first-child {
-  margin-top: 0;
-}
+
 
 .footer {
   color: #000;
@@ -386,13 +383,12 @@
   line-height: normal;
   min-width: 1340px;
   flex-shrink: 0;
-  margin-top: 180px;
+  margin-top: 159px;
   margin-left: 50px;
   margin-right: 50px;
   margin-bottom: 90px;
   display: grid;
-  grid-template-columns: 2fr 7fr 240px;
-  align-items: start;
+  grid-template-columns: 1fr 15% 1fr;
 }
 
 .footer__menu {
@@ -433,4 +429,5 @@
 
 .footer__social-icon {
   max-height: 48px;
+  max-width: 240px;
 }
