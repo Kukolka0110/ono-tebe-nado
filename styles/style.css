@@ -428,6 +428,7 @@
 }
 
 .footer__social-icon {
-  max-height: 48px;
-  max-width: 240px;
+  max-width: 48px;
+  max-height: 240px;
+  
 }
