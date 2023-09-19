@@ -82,7 +82,7 @@
   background-image: url(../images/cover.jpg);
   position: relative;
   min-height: 757px;
-  min-width: 1440px;
+  max-width: 1440px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -195,9 +195,9 @@
 }
 
 .lots {
-  max-width: 1340px;
   margin-top: 180px;
   margin-left: 50px;
+  margin-right: 50px;
   display: flex;
   flex-direction: column;
   
@@ -317,7 +317,8 @@
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  margin-left: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .about__logo {
@@ -359,7 +360,7 @@
 }
 
 .about__text:last-child {
-  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .about__title {
@@ -383,7 +384,7 @@
   line-height: normal;
   min-width: 1340px;
   flex-shrink: 0;
-  margin-top: 159px;
+  margin-top: 180px;
   margin-left: 50px;
   margin-right: 50px;
   margin-bottom: 90px;
