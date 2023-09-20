@@ -34,7 +34,7 @@
   list-style-type: circle;
   text-decoration: underline;
   text-underline-position: under;
-  padding-top: 43px;
+  padding-top: 44px;
   padding-bottom: 34px;
 }
 
@@ -87,8 +87,10 @@
   background-size: cover;
   background-position: center;
   flex-shrink: 0;
-  margin-top: 97px;
-  padding-top: 164px;
+  margin-top: 96px;
+  padding-top: 166px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: column;
 }
@@ -195,7 +197,7 @@
 }
 
 .lots {
-  margin-top: 180px;
+  margin-top: 181px;
   margin-left: 50px;
   margin-right: 50px;
   display: flex;
@@ -343,7 +345,8 @@
 .about__texts {
   display: flex;
   flex-direction: column;
-  margin-top: 97px;
+  padding-top: 99px;
+  
 }
 
 .about__text {
@@ -355,7 +358,7 @@
   line-height: normal;
   max-width: 885px;
   flex-shrink: 0;
-  padding-bottom: 24px;
+  padding-bottom: 23px;
   
 }
 
@@ -371,7 +374,7 @@
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
-  padding-bottom: 100px;
+  padding-top: 100px;
 }
 
 
